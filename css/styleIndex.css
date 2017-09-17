@@ -1,0 +1,390 @@
+body {
+	height: 700px;
+	background: #EBF4FD;
+	margin: 0 auto;
+	overflow: hidden;
+}
+/*Side navigation*/
+nav {
+	width: 70px;
+	height: 100%;
+	position: fixed;
+	z-index: 10000;
+	left: 0;
+	top: 0;
+	border-right: 2px solid #F0F0F0;
+	text-align: center;
+	background: #fff;
+	font-family: var(--fontRale);
+}
+nav img {
+	width: 40px;
+	position: absolute;
+	top: 47%;
+	left: 14px;
+}
+nav .navBot {
+	position: absolute;
+	left: 28px;
+	bottom: 25px;
+	writing-mode: tb-rl;
+    -ms-transform:rotate(180deg); 
+    -moz-transform:rotate(180deg); 
+    -webkit-transform:rotate(180deg);
+    -o-transform:rotate(180deg);
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-size: 10px;
+    color: #bdc3c7;
+}
+nav .navTop {
+	position: absolute;
+	left: 28px;
+	top: 25px;
+	writing-mode: tb-rl;
+    -ms-transform:rotate(180deg); 
+    -moz-transform:rotate(180deg); 
+    -webkit-transform:rotate(180deg);
+    -o-transform:rotate(180deg);
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-size: 10px;
+    color: #bdc3c7;
+}
+/*Main*/
+main {
+	margin: 0 auto;
+	width: inherit;
+	height: 100%;
+	font-family: var(--fontUbu);
+}
+main .main {
+	text-align: center;	
+	width: 1300px;
+	height: 700px;
+	/*float: left;*/
+	margin: 0 auto;
+}
+main .main #cover {
+	width: inherit;
+	height: inherit;
+	position: fixed;
+	z-index: 1;
+	background: rgba(52, 73, 94, .3);
+	visibility: hidden;
+	transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+}
+main .main .mainCont {
+	padding-top: 10%;
+}
+main .main .mainCont img {
+	width: 70px;
+}
+main .main .mainCont  .bg {
+	width: 400px;
+	position: absolute;
+	margin-left: -196px;
+	margin-top: -215px;
+	z-index: -2;
+}
+main .main .mainCont  h1 {	
+	font-weight: 300;
+	letter-spacing: 2px;
+	color: #34495e;
+}
+main .main .mainCont  h2 {
+	font-size: 13px;
+	font-weight: 100;
+	color: #34495e;
+	letter-spacing: 2px;
+}
+main .main .mainCont  #ruin {
+	margin-top: 100px;
+	color: #C1C7CD;
+	letter-spacing: 2px;
+	font-size: 12px;
+	font-weight: 300;
+}
+main .main .mainCont button {
+	position: absolute;
+	margin-top: 300px;
+	margin-left: -15px;
+	background: transparent;
+	color: #505A78;	
+	width: 100px;
+    height: 40px;
+    border-top: 0;
+    border: 1px solid #505A78;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+    text-align: top;
+    font-size: 11px;
+    border-radius: 3px;
+}
+main .main .mainCont button div {
+	position: absolute;
+	z-index: -1;
+	margin-top: -22px;
+	margin-left: -5px;
+	background: #B2D8F7;	
+	width: 100px;
+    height: 40px;
+    border-top: 0;
+    border-radius: 3px;
+    transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+}
+main .main .mainCont button:hover > div {
+	margin-top: -25px;
+	margin-left: -2px;
+}
+main #mainHidden {
+	width: 0px;
+	height: 700px;	
+	float: left;
+	background: transparent;
+	/*border-right: 2px solid #F0F0F0;*/
+	transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+}
+/*Navigationo hidden*/
+#navHidden {
+	width: 500px;
+	height: 700px;	
+	position: fixed;
+	margin-left: -450px;
+	left: 0;
+	background: #fff;
+	border-right: 2px solid #F0F0F0;
+	transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    padding-left: 120px;
+    padding-right: 70px;
+    z-index: 2;
+    font-family: var(--fontUbu);
+}
+#navHidden .navBtns {
+	width: 350px;
+	height: 150px;
+}
+#navHidden .navBtns h4 {
+	font-size: 10px;
+	text-align: center;
+	margin-top: 10px;
+	font-weight: 200;
+	color: #d3d3d3;
+	letter-spacing: 1.5px;
+	cursor: pointer;
+	float: left;
+	margin-top: 25px;
+}
+#navHidden .navBtns h4 span {
+	color: #6aa3ee;
+}
+#navHidden .navBtns button {
+	margin-top: 20px;
+	float: right;
+	width: 25px;
+	height: 25px;
+	background: transparent;
+}
+#navHidden .navBtns .error {
+	font-family: var(--fontUbu);
+	position: absolute;
+	margin-top: 80px;
+	width: 310px;
+	padding: 13px 15px 13px 15px;
+	background: transparent;
+	color: #EF9A9A;
+	border: 1px solid #FFCDD2;
+	font-size: 12px;
+	letter-spacing: 1.5px;
+	border-radius: 3px;
+	display: none;
+	font-weight: 100;
+}
+#navHidden .navBtns .errorBg {
+	position: absolute;
+	background: #FFEBEE;
+	width: 310px;
+	height: 40px;
+	z-index: -1;
+	border-radius: 3px;
+	margin-top: 85px;
+	margin-left: -5px;
+	display: none;
+}
+#navHidden h1 {
+	color: #666666;
+	font-weight: 400;
+}
+#navHidden h2 {
+	color: #CACACA;
+	font-weight: 300;
+	font-size: 12px;
+	letter-spacing: 1px;
+	line-height: 1.5;
+}
+#navHidden form {
+	width: 300px;
+	margin-top: 50px;
+	text-align: left
+	display: none;
+}
+#navHidden form input {
+	text-indent: 50px;
+	font-size: 12px;
+	letter-spacing: 2px;
+	width: 290px;
+	height: 50px;
+	border: 0px;
+	border-bottom: 1px solid #95a5a6;
+	margin-bottom: 20px;
+	margin-left: 10px;
+	color: #666666;
+	transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;  
+}
+#navHidden form img {
+	width: 25px;
+	position: absolute;
+	margin-left: 20px;
+	margin-top: 13px;
+}
+#navHidden form .iptClearU {
+	width: 12px;
+	position: absolute;
+	margin-left: -20px;
+	margin-top: 18px;
+	cursor: pointer;
+	display: none;
+}
+#navHidden form .iptOkayU {
+	width: 20px;
+	position: absolute;
+	margin-left: -25px;
+	margin-top: 15px;
+	cursor: pointer;
+	display: none;
+}
+#navHidden form .clearU, .clearP {
+	padding: 5px 10px 5px 10px;
+	background: #ecf0f1;
+	position: absolute;
+	margin-top: -75px;
+	margin-left: 295px;
+	border-radius: 10px;
+	border-bottom-left-radius: 0px;
+	color: #95a5a6;
+	font-size: 10px;
+	letter-spacing: 1px;
+	display: none;
+}
+#navHidden form .iptClearU:hover ~ .clearU {
+	display: inherit;
+}
+#navHidden form .iptClearP {
+	width: 12px;
+	position: absolute;
+	margin-left: -20px;
+	margin-top: 18px;
+	cursor: pointer;
+	display: none;
+}
+#navHidden form .iptOkayP {
+	width: 20px;
+	position: absolute;
+	margin-left: -25px;
+	margin-top: 15px;
+	cursor: pointer;
+	display: none;
+}
+#navHidden form .iptClearP:hover ~ .clearP {
+	display: inherit;
+}
+#navHidden form input:focus {
+	border-bottom: 1px solid #B2D8F7;
+}
+
+::-webkit-input-placeholder { 
+	font-family: var(--fontUbu);
+  	color: #D3D3D3;
+  	font-weight: 200;
+}
+:-ms-input-placeholder { 
+	font-family: var(--fontUbu);
+  	color: #D3D3D3;
+  	font-weight: 200;
+}
+::-moz-placeholder { 
+	font-family: var(--fontUbu);
+ 	color: #D3D3D3;
+ 	font-weight: 200;
+ 	opacity: 1;
+}
+/*BUTTONS*/
+#navHidden form button {
+	position: relative;
+    font-size: 12px;
+    letter-spacing: 1.50px;
+    font-weight: 500;
+    width: 300px;
+    height: 50px;
+    color: #fff;
+    background: #eff5fe;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;  
+    display: block;
+    margin-top: 20px;
+    border-radius: 3px;	
+}
+#navHidden form #lSubmit {
+	background: #eff5fe;
+}
+#navHidden form #lClose {
+	background: #ffecec;
+}
+#navHidden form button div {
+    background: #6aa3ee;
+    width: 300px;
+    height: 50px;
+    position: absolute;
+    border-radius: 3px;	
+    z-index: 5;
+    margin-top: -30px;
+    padding: 13px;
+    margin-left: 4px;
+    border: 2px solid #fff;
+    padding-top: 16px;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out; 
+}
+#navHidden form #lSubmit:hover > div {
+	background: #3498db
+}
+#navHidden form #lClose div {
+	background: #ef5968;
+}
+#navHidden form #lClose:hover > div {
+	background: #ef263a;
+}
+#navHidden form h5 {
+	font-size: 10px;
+	text-align: center;
+	margin-top: -5px;
+	font-weight: 200;
+	color: #d3d3d3;
+	letter-spacing: 1.5px;
+	cursor: pointer;
+}
+#navHidden form h5 span {
+	color: #6aa3ee;
+}
