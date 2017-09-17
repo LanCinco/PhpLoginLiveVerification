@@ -40,7 +40,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `usercode`, `userpass`, `fname`, `lname`, `verify`) VALUES
-(1, 'pingguerrero', 'f637608f12eb2e607b912ed295e88140', 'Ping', 'Guerrero', 'T'),
+(1, 'pingguerrero', 'c4ca4238a0b923820dcc509a6f75849b', 'Ping', 'Guerrero', 'T'),
 (2, '1', 'c4ca4238a0b923820dcc509a6f75849b', '', '', 'T');
 
 --
